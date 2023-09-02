@@ -1,10 +1,10 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
+  <title>Project 4 - Manipulating the DOM</title>
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
@@ -13,47 +13,81 @@
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
+    <nav class="navbar__globalmenu"></nav>
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list"></ul>
+      <ul id="navbar__list">
+        <li><a class="menu__link">TEST</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <header class="main__hero">
-      <h1>Landing Page </h1>
+      <img class="main__icon" src="img/aws_2007_01_01_100014192753.gif">
+      <h1>Welcome to Amazon Web Services</h1>
     </header>
     <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="Section 1" class="your-active-class">
+    <section id="section1" data-nav="What we do" class="your-active-class">
       <div class="landing__container">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h2>What we do</h2>
+        <p>Amazon Web Services provides developers with direct access to Amazon's robust technology platform. Build on Amazon's suite of web services to enable and enhance your applications. We innovate for you, so that you can innovate for your customers. Browse developer innovations in our Solutions Catalog to see the possibilities!</p>
       </div>
     </section>
-    <section id="section2" data-nav="Section 2">
+    <section id="section2" data-nav="How to use">
       <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2>Start Using Amazon Web Services</h2>
+        <ol>
+            <li class="landing__action"><a href="">Create</a> your free Amazon Web Services account</li>
+            <li class="landing__action"><a href="">Explore</a> our web services</li>
+            <li class="landing__action"><a href="">Build</a> your application</li>
+        </ol>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h2>Browse Web Services</h2>
+        <ul>
+            <li><a href="">Amazon E-Commerce Service</a></li>
+            <li><a href="">Amazon Elastic Compute Cloud (Beta)</a></li>
+            <li><a href="">Amazon Historical Pricing</a></li>
+            <li><a href="">Amazon Mechanical Turk (Beta)</a></li>
+            <li><a href="">Amazon Simple Storage Service</a></li>
+            <li><a href="">Amazon Simple Queue Service</a></li>
+            <li><a href="">Alexa Web Services</a></li>
+            <li><a href="">Browse All Web Services</a></li>
+        </ul>
       </div>
     </section>
-    <section id="section3" data-nav="Section 3">
+    <section id="section3" data-nav="News">
       <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2>Results In the News</h2>
+        
+        <h3>ComputerWorld: Computing in the Cloud (Dec. 21, 2006)</h3>
+        <p>Who needs hardware? Amazon offers companies all the computing power they want in its virtual Elastic Compute Cloud. </p>
+        
+        <h3>Amazon vs. Rackspace (Dec. 1, 2006)</h3>
+        <p>CTO of Webmail.us explains the transition from Rackspace to a smarter backup system, Amazon S3.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h3>Jeff Bezos: Honey, I just shrunk the server hosting business (Nov. 17, 2006)</h3>
+        <p>David Berlind, Mashup Camp organizer and ZDNet Executive Editor, crunches the numbers for using Amazon Elastic Compute Cloud. He calculates savings of $6648 per year for his two-server needs.  </p>
+
+        <h3>Photosharing site, Smugmug saves $500,000 with Amazon S3 (Nov. 10, 2006)</h3>
+        <p>Smugmug CEO, Don MacAskill outlines their cost savings using Amazon S3 for storage = $48,490 a month. After experiencing 72% growth in 7 months, Smugmug estimates greater savings as they continue to grow. </p>
+      </div>
+    </section>
+    <section data-nav="History">
+      <div class="landing__container">
+        <h2>What is this?</h2>
+
+        <p>This is a recreation of an early version of the first AWS homepage, found on the <a href="https://web.archive.org/web/20070101134207/http://www.amazon.com/aws/">Wayback Machine dated January 1st, 2007.</a>.</p>
+
+        <p>AWS changed the way software is built by inventing the concept of "the cloud", computational resource were rented out to software companies so they could build off of Amazon's expertise in managing infrastructure.</p>
       </div>
     </section>
   </main>
   <footer class="page__footer">
-    <p>&copy Udacity</p>
+    <p>Conditions of Use | Privacy Notice © 1996-2007, Amazon.com, Inc. or its affiliates </p>
+    <p><a href="http://creativecommons.org/licenses/by-nc-nd/5.0">Creative Commons Attribution-NonCommercial- NoDerivs 3.0 License</a> 2023</p>
   </footer>
-
 </body>
 </html>
