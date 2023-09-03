@@ -4,11 +4,15 @@
   "description": "Landing Page project",
   "main": "js/app.js",
   "scripts": {
-    "start": "live-server --port=3000"
+    "start": "npx live-server --port=3000",
+    "check": "npx eslint ."
   },
   "author": "",
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "live-server": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0"
   }
 }
